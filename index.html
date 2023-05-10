@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css">
   <title>Trybewarts</title>
 </head>
 
@@ -15,24 +28,27 @@
     <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form action="" class="trybewarts-login" method="get">
+      <label for="email">Email:
+      </label>
       <input type="email" name="email" id="email" placeholder="Email">
+      <label for="input-password">Senha:
+      </label>
       <input type="password" name="password" id="input-password" placeholder="Senha">
       <button type="submit" id="login-btn">Entrar</button>
     </form>
   </header>
 
   <main class="main-container">
-    <form action="" id="evaluation-form">
-      <div class="form-container">
-        <h2>Formulário de Avaliação</h2>
-        <div class="dados-pessoais">
+    <div class="form-container">
+      <form action="" id="evaluation-form">
+        <div class="dados-pessoais form-div">
           <label for="input-name">Nome:</label>
           <input type="text" name="Nome" id="input-name" placeholder="Nome" required>
 
           <label for="input-lastname">Sobrenome:</label>
           <input type="text" name="Sobrenome" id="input-lastname" placeholder="Sobrenome" required>
         </div>
-        <div class="email-house">
+        <div class="email-house form-div">
           <input type="email" name="Email" id="input-email" placeholder="Email" required>
           <label for="house">Casa:</label>
           <select name="House" id="house">
@@ -42,7 +58,7 @@
             <option value="Pytherina" id="pytherina-house">Pytherina</option>
           </select>
         </div>
-        <div class="family-container">
+        <div class="family-container form-div">
           <div class="family">
             <label for="" id="label-family">Qual sua família?</label>
             <label for="Frontend"> Frontend
@@ -56,7 +72,7 @@
             </label>
           </div>
         </div>
-        <div class="content-container">
+        <div class="content-container form-div">
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div class="subject-container">
             <label for="subject1">HoFs
@@ -79,7 +95,7 @@
             </label>
           </div>
         </div>
-        <div class="evaluation-container">
+        <div class="evaluation-container form-div">
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
           <input type="radio" name="rate" value="1">1
           <input type="radio" name="rate" value="2">2
@@ -92,24 +108,25 @@
           <input type="radio" name="rate" value="9">9
           <input type="radio" name="rate" value="10" checked>10
         </div>
-        <div class="coment-container">
+        <div class="coment-container form-div">
           <label for="" class="textarea">Deixe seu comentário:</label>
           <textarea name="Coment" id="textarea" cols="30" rows="10" maxlength="500" required></textarea>
           <span id="counter">500</span>
         </div>
-        <div class="validation-container">
+        <div class="validation-container form-div">
           <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" id="agreement">
         </div>
         <button type="submit" id="submit-btn" disabled>Enviar</button>
-    </form>
+      </form>
+    </div>
     <form action="" method="get" id="form-data">
       <div id="name-data"></div>
     </form>
-    </div>
     <img src="./images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
   </main>
   <footer>Direitos reservados à Trybewarts©</footer>
+  <script src="./src/main.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>

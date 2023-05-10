@@ -9,6 +9,7 @@ const textArea = document.querySelector('#textarea');
 const getEvaluationForm = document.querySelector('#evaluation-form');
 const getDataForm = document.querySelector('#form-data');
 const getNameData = document.querySelector('#name-data');
+const formContainer = document.querySelector('.form-container')
 
 getLoginBtn.addEventListener('click', (event) => {
   event.preventDefault();
@@ -85,6 +86,7 @@ const addData = () => {
 getEvaluationForm.addEventListener('submit', (event) => {
   event.preventDefault();
   getEvaluationForm.style.display = 'none';
+  formContainer.style.display = 'none'
   getDataForm.style.display = 'block';
   addData();
 });
