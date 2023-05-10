@@ -1,3 +1,10 @@
+## Link para acessar o Projeto - 
+Acesso ao projeto -- **[App TrybeWarts](https://brunobenunes.github.io/trybewarts/)**
+<details>
+  <summary><strong> Preview da Aplicação </strong></summary>
+  <p>Gif do App </p>
+  <img src="./images/trybewarts..gif" alt="gif" width="450px"/>
+</details>
 # Projeto TrybeWarts
 
 Este é um projeto que utiliza HTML, CSS e JavaScript puro para criar um formulário interativo. A aplicação permite que os usuários insiram suas informações pessoais e, em seguida, visualize essas informações em conjunto. Além disso, o projeto também inclui uma área de login.
@@ -19,6 +26,3 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - HTML: Linguagem de marcação utilizada para estruturar a página web.
 - CSS: Linguagem de estilização utilizada para personalizar a aparência do projeto.
 - JavaScript: Linguagem de programação utilizada para adicionar interatividade e funcionalidades ao projeto.
-
-## Link para acessar o Projeto - 
-Acesso o projeto -- [App TrybeWarts](https://brunobenunes.github.io/trybewarts/)
